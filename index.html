@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nitro assistant</title>
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+</head>
+<body>
+    <div id="nav" onmousedown="return false;">
+        <svg class="logo" viewBox="0 0 120 225">
+            <path d="M74 0L0 124H74V0Z" class="filled path1" />
+            <path d="M46 225L120 101L46 101L46 225Z" class="filled path2" />
+        </svg>
+
+        <div class="links">
+            <div class="line hidden"></div>
+            <a data-clr="#0074D9" href="start"><span>Get Started</span></a>
+            <a data-clr="#FF851B" href="features"><span>Features</span></a>
+            <a data-clr="#3D9970" href="pricing"><span>Pricing</span></a>
+            <a data-clr="#FF4136" href="about"><span>About</span></a>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <div class="text" onmousedown="return false;">
+            <h5>
+                <svg viewBox="0 0 24 24"><path d="M19 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h4l3 3 3-3h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-5.12 10.88L12 17l-1.88-4.12L6 11l4.12-1.88L12 5l1.88 4.12L18 11l-4.12 1.88z"/></svg>
+                <span>Welcome to</span>
+            </h5>
+
+            <h1>Nitro</h1>
+            
+            <p>Imagine <b>Internet</b> at home, <i>instantly</i> available.</p>
+        </div>
+
+        <div class="graphics">
+            <div class="rpi">
+                <img src="./graphics/rpi.png" alt="">
+            </div>
+        </div>
+
+        <div class="scroll">
+            <svg class="one" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+            <svg class="two" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+        </div>
+
+        <div class="features">
+            <h4>Features</h4>
+
+            <div class="list">
+
+            </div>
+
+            <div class="small"></div>
+
+            <div class="picture">
+                <img src="" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div id="connect" class="hidden" style="display: none;">
+        <h4><b>NITRO</b> device detected</h4>
+
+        <img src="" alt="">
+        <p><span class="description"></span> <span class="version">(1.0.0)</span></p>
+
+        <svg class="info" viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        <a target="blank" href="http://nitro.local/">open</a>
+    </div>
+
+    <script src="https://pzm.herokuapp.com/$/getJSON"></script>
+    <script src="main.js"></script>
+</body>
+</html>
