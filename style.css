@@ -13,8 +13,8 @@ html, body {
     
 }
 
-/* Nav section
-==================== */
+/* Nav section @nav
+======================= */
 
 #nav {
     position: fixed;
@@ -110,11 +110,11 @@ html, body {
 }
 
 #nav .links a span {
-    color: rgba(0, 0, 0, .5);
+    color: rgba(0, 0, 0, .7);
 }
 
 #nav:hover .links a span {
-    color: rgba(0, 0, 0, .3);
+    color: rgba(0, 0, 0, .4);
 }
 
 #nav .links a:hover span {
@@ -139,7 +139,7 @@ html, body {
     opacity: 0;
 }
 
-/* Wrapper 
+/* Wrapper / @wrapper
 ==================== */
 
 #wrapper {
@@ -147,7 +147,7 @@ html, body {
 }
 
 #wrapper .text {
-    padding-bottom: 20%;
+    padding-bottom: 25%;
     padding-top: 12%;
     height: 100%;
     box-sizing: border-box;
@@ -237,11 +237,6 @@ html, body {
     -webkit-animation: rpi-big 60s ease infinite;
 }
 
-#wrapper .features {
-    width: 100%;
-    background-color: pink;
-}
-
 @keyframes rpi-big {
     0% {
         transform: translateY(0px);
@@ -310,8 +305,123 @@ html, body {
     -o-transform: translateY(-6px);
 }
 
-/* Connect modal
+/* Features / @features
 ==================== */
+
+#wrapper .features {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    margin-top: 50px;
+}
+
+#wrapper .features > h4 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 20px;
+}
+
+#wrapper .features .left {
+    width: 50%;
+    float: left;
+}
+
+#wrapper .features .selected {
+    box-shadow: 0 3px 25px rgba(0, 0, 0, .4);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 60%;
+    min-height: 110px;
+    min-width: 500px;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -ms-transition: .2s ease;
+    -o-transition: .2s ease;
+}
+
+#wrapper .features .selected:hover {
+    box-shadow: 0 10px 45px rgba(0, 0, 0, .5);
+}
+
+#wrapper .features .selected svg {
+    width: 48px;
+    margin-right: 15px;
+    float: left;
+}
+
+#wrapper .features .selected h4 {
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+#wrapper .features .selected p {
+    line-height: 25px;
+    margin-left: 65px;
+}
+
+#wrapper .features .small {
+    padding: 20px 0;
+}
+
+#wrapper .features .small svg {
+    width: 24px;
+    height: 34px;
+    padding: 10px 15px;
+    margin-right: 5px;
+    display: inline-block;
+    border-radius: 35px;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    transition: .2s ease;
+    -webkit-transition: .2s ease;
+    -moz-transition: .2s ease;
+    -ms-transition: .2s ease;
+    -o-transition: .2s ease;
+}
+
+#wrapper .features .small svg:hover {
+    background-color: rgba(0, 0, 0, .15);
+}
+
+#wrapper .features .small svg.highlighted {
+    fill: #0074D9;
+    background-color: rgba(0, 116, 217, .3);
+}
+
+#wrapper .features .small svg.highlighted:hover {
+    fill: #005096;
+    background-color: rgba(0, 76, 143, 0.3);
+}
+
+#wrapper .features .picture {
+    width: 50%;
+    float: right;
+}
+
+#wrapper .features .picture img {
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+}
+
+/* Connect modal / @connect
+=============================== */
 
 #connect {
     text-align: center;
