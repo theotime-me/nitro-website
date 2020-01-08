@@ -1,144 +1,3 @@
-/* Resets
-==================== */
-
-html, body, a, p, h1, h2, h3, h4, h5, h6, span, b, i, div, video, audio {
-    padding: 0px;
-    margin: 0px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #333;
-}
-
-html, body {
-    
-}
-
-/* Nav section @nav
-======================= */
-
-#nav {
-    position: fixed;
-    width: 100%;
-    height: 67px;
-    padding: 20px 30px;
-    top: 0;
-    box-sizing: border-box;
-    text-align: center;
-    background-color: #fff;
-    transition: .2s ease;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -ms-transition: .2s ease;
-	-o-transition: .2s ease;
-	z-index: 10;
-}
-
-#nav.shadow {
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
-}
-
-#nav .logo {
-	height: 48px;
-	width: 48px;
-	padding: 20px;
-	background-color: #fff;
-	border-radius: 50px;
-	-webkit-border-radius: 50px;
-	-moz-border-radius: 50px;
-	-ms-border-radius: 50px;
-	-o-border-radius: 50px;
-	float: left;
-	transition: .2s ease;
-	-webkit-transition: .2s ease;
-	-moz-transition: .2s ease;
-	-ms-transition: .2s ease;
-	-o-transition: .2s ease;
-	border: 2px solid transparent;
-
-}
-
-#nav.shadow .logo {
-	margin-top: -5px;
-	border: 2px solid rgba(0, 0, 0, .15);
-}
-
-#nav.shadow .logo:hover {
-	box-shadow: 0px 8px 10px rgba(0, 0, 0, .2);
-}
-
-#nav .logo path {
-    fill: none;
-    stroke-width: 12px;
-    stroke: rgba(0, 0, 0, .3);
-}
-
-#nav .logo path.filled {
-    fill: #4c4a53;
-    stroke-width: 0px;
-}
-
-#nav .links {
-	margin-top: 15px;
-	transition: .2s ease;
-	-webkit-transition: .2s ease;
-	-moz-transition: .2s ease;
-	-ms-transition: .2s ease;
-	-o-transition: .2s ease;
-}
-
-#nav.shadow .links {
-	margin-top: 5px;
-}
-
-#nav .links a {
-    font-family: "Lexend Deca", sans-serif;
-    text-decoration: none;
-    padding: 10px 20px;
-    transition: .2s ease;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -ms-transition: .2s ease;
-    -o-transition: .2s ease;
-}
-
-#nav .links a span {
-    transition: .2s ease;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -ms-transition: .2s ease;
-    -o-transition: .2s ease;
-}
-
-#nav .links a span {
-    color: rgba(0, 0, 0, .7);
-}
-
-#nav:hover .links a span {
-    color: rgba(0, 0, 0, .4);
-}
-
-#nav .links a:hover span {
-    color: #005fb3;
-}
-
-#nav .links .line {
-    position: absolute;
-    width: 80px;
-    height: 3px;
-    top: 65px;
-    background-color: #005fb3;
-    transition: .2s ease;
-    -webkit-transition: .2s ease;
-    -moz-transition: .2s ease;
-    -ms-transition: .2s ease;
-    -o-transition: .2s ease;
-}
-
-#nav .links .line.hidden {
-    width: 0px;
-    opacity: 0;
-}
-
 /* Wrapper / @wrapper
 ==================== */
 
@@ -147,7 +6,7 @@ html, body {
 }
 
 #wrapper .text {
-    padding-bottom: 25%;
+    padding-bottom: 15%;
     padding-top: 12%;
     height: 100%;
     box-sizing: border-box;
@@ -160,7 +19,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-	width: 160px;
+	width: 180px;
 	margin-top: 50px;
     padding: 0 15px;
     height: 40px;
@@ -212,6 +71,12 @@ html, body {
 	color: #111;
 }
 
+#wrapper .text .catch {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
 #wrapper .graphics {
     width: 50%;
     height: 100%;
@@ -221,7 +86,7 @@ html, body {
 }
 
 #wrapper .graphics .rpi {
-    display: flex;
+    display: none;
     align-items: center;
     height: 100%;
     width: 50%;
@@ -308,13 +173,14 @@ html, body {
 /* Features / @features
 ==================== */
 
-#wrapper .features {
+#features {
     font-family: "Roboto", sans-serif;
     width: 100%;
+    height: 500px;
     margin-top: 50px;
 }
 
-#wrapper .features > h4 {
+#features > h4 {
     font-family: "Lexend Deca", sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -322,12 +188,12 @@ html, body {
     margin-bottom: 20px;
 }
 
-#wrapper .features .left {
-    width: 50%;
+#features .left {
+    width: 40%;
     float: left;
 }
 
-#wrapper .features .selected {
+#features .selected {
     box-shadow: 0 3px 25px rgba(0, 0, 0, .4);
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -346,17 +212,17 @@ html, body {
     -o-transition: .2s ease;
 }
 
-#wrapper .features .selected:hover {
+#features .selected:hover {
     box-shadow: 0 10px 45px rgba(0, 0, 0, .5);
 }
 
-#wrapper .features .selected svg {
+#features .selected svg {
     width: 48px;
     margin-right: 15px;
     float: left;
 }
 
-#wrapper .features .selected h4 {
+#features .selected h4 {
     font-family: "Lexend Deca", sans-serif;
     font-size: 25px;
     font-weight: 400;
@@ -364,16 +230,16 @@ html, body {
     margin-bottom: 10px;
 }
 
-#wrapper .features .selected p {
+#features .selected p {
     line-height: 25px;
     margin-left: 65px;
 }
 
-#wrapper .features .small {
+#features .small {
     padding: 20px 0;
 }
 
-#wrapper .features .small svg {
+#features .small svg {
     width: 24px;
     height: 34px;
     padding: 10px 15px;
@@ -391,27 +257,43 @@ html, body {
     -o-transition: .2s ease;
 }
 
-#wrapper .features .small svg:hover {
+#features .small svg:hover {
     background-color: rgba(0, 0, 0, .15);
 }
 
-#wrapper .features .small svg.highlighted {
+#features .small svg.notReady {
+    opacity: .4;
+}
+
+#features .small svg.highlighted {
     fill: #0074D9;
     background-color: rgba(0, 116, 217, .3);
 }
 
-#wrapper .features .small svg.highlighted:hover {
+#features .small svg.highlighted:hover {
     fill: #005096;
     background-color: rgba(0, 76, 143, 0.3);
 }
 
-#wrapper .features .picture {
+#features .picture {
     width: 50%;
+    background-color: rgba(0, 0, 0, .3);
+    padding: 10px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
     float: right;
 }
 
-#wrapper .features .picture img {
+#features .picture .img {
     width: 100%;
+    min-height: 400px;
+    height: 50%;
+    overflow: hidden;
+    background-position: 0 0;
+    background-size: 100%;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Nitro assistant</title>
     <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon.svg" type="image/svg">
 </head>
@@ -32,13 +33,11 @@
                 <span>Welcome to</span>
             </h5>
 
-            <h1>Nitro</h1>
+            <h1>...</h1>
             
-            <p>Imagine <b>Internet</b> at home, <i>instantly</i> available.</p>
+            <p class="punchline">...</p>
 
-            <div class="catch">
-                
-            </div>
+            <div class="catch"></div>
         </div>
 
         <div class="graphics">
@@ -47,12 +46,12 @@
             </div>
         </div>
 
-        <div class="scroll">
+        <div class="scroll" onclick="location.href = '#features'">
             <svg class="one" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
             <svg class="two" viewBox="0 0 24 24"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
         </div>
 
-        <div class="features">
+        <div id="features">
             <h4>Features</h4>
 
             <div class="left">
@@ -66,7 +65,7 @@
             </div>
 
             <div class="picture">
-                <img src="https://cdn.dribbble.com/users/631735/screenshots/9323845/media/7e3dc52d42f67380500a3dee018cac1b.jpg">
+                <div class="img"></div>
             </div>
         </div>
     </div>
@@ -81,8 +80,9 @@
         <a target="blank" href="http://nitro.local/">open</a>
     </div>
 
-    <script src="https://pzm.herokuapp.com/$/getJSON|lang"></script>
+    <script src="https://pzm.herokuapp.com/$/getJSON|lang|screen"></script>
     <script src="translations.js"></script>
+    <script src="common.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

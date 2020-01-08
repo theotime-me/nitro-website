@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nitro assistant</title>
+    <link rel="stylesheet" href="/fonts.css">
+    <link rel="stylesheet" href="/common.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+</head>
+<body>
+    <div id="nav" onmousedown="return false;">
+        <svg class="logo" viewBox="0 0 120 225">
+            <path d="M74 0L0 124H74V0Z" class="filled path1" />
+            <path d="M46 225L120 101L46 101L46 225Z" class="filled path2" />
+        </svg>
+
+        <div class="links">
+            <div class="line hidden"></div>
+            <a data-clr="#0074D9" href="/start"><span>Get Started</span></a>
+            <a data-clr="#FF851B" href="/features"><span>Features</span></a>
+            <a data-clr="#3D9970" href="/pricing" class="selected"><span>Pricing</span></a>
+            <a data-clr="#FF4136" href="/about"><span>About</span></a>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        <h4>Nitro is <b>totally free</b> and it's for an eternity !<br>Maybe even two.</h4>
+
+        <div class="table recommended" dot="Recommended">
+            <h1>0<span>.00</span><sup>€</sup><b>/mois</b></h1>
+
+            <p>Pour utiliser Nitro.</p>
+
+            <div class="features"></div>
+        </div>
+
+        <div class="table donation">
+            <h1>19<span>.00</span><sup>€</sup><b>/an</b></h1>
+
+            <p>Pour assurer l'hébergement</p>
+
+            <a target="blank" href="https://ko-fi.com/theotime">Fund the project</a>
+        </div>
+    </div>
+
+    <div id="connect" class="hidden" style="display: none;">
+        <h4><b>NITRO</b> device detected</h4>
+
+        <img src="" alt="">
+        <p><span class="description"></span> <span class="version">(1.0.0)</span></p>
+
+        <svg class="info" viewBox="0 0 24 24"><path d="M11 7h2v2h-2zm0 4h2v6h-2zm1-9C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/></svg>
+        <a target="blank" href="http://nitro.local/">open</a>
+    </div>
+
+    <script src="https://pzm.herokuapp.com/$/getJSON|lang|screen"></script>
+    <script src="/translations.js"></script>
+    <script src="/common.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
